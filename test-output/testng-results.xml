@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-22T01:52:16 IST" name="Suite" finished-at="2025-05-22T01:52:34 IST" duration-ms="17985">
+    <groups>
+      <group name="Purchase">
+        <method signature="Standalonetest.SubmitOrder(java.util.HashMap)[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" name="SubmitOrder" class="samreen.tests.Standalonetest"/>
+      </group> <!-- Purchase -->
+      <group name="error">
+        <method signature="Errorvalidations.GetGerror()[pri:0, instance:samreen.tests.Errorvalidations@37883b97]" name="GetGerror" class="samreen.tests.Errorvalidations"/>
+      </group> <!-- error -->
+    </groups>
+    <test started-at="2025-05-22T01:52:16 IST" name="Errorvalidations" finished-at="2025-05-22T01:52:20 IST" duration-ms="3804">
+      <class name="samreen.tests.Errorvalidations">
+        <test-method is-config="true" signature="driverInitialisation()[pri:0, instance:samreen.tests.Errorvalidations@37883b97]" started-at="2025-05-22T01:52:17 IST" name="driverInitialisation" finished-at="2025-05-22T01:52:18 IST" duration-ms="1583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialisation -->
+        <test-method signature="GetGerror()[pri:0, instance:samreen.tests.Errorvalidations@37883b97]" started-at="2025-05-22T01:52:18 IST" name="GetGerror" finished-at="2025-05-22T01:52:19 IST" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetGerror -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:samreen.tests.Errorvalidations@37883b97]" started-at="2025-05-22T01:52:19 IST" name="closebrowser" finished-at="2025-05-22T01:52:20 IST" duration-ms="1265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- samreen.tests.Errorvalidations -->
+    </test> <!-- Errorvalidations -->
+    <test started-at="2025-05-22T01:52:16 IST" name="Standalonetest" finished-at="2025-05-22T01:52:34 IST" duration-ms="17985">
+      <class name="samreen.tests.Standalonetest">
+        <test-method is-config="true" signature="driverInitialisation()[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" started-at="2025-05-22T01:52:17 IST" name="driverInitialisation" finished-at="2025-05-22T01:52:20 IST" duration-ms="2785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialisation -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" started-at="2025-05-22T01:52:20 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-05-22T01:52:29 IST" duration-ms="9471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{spassword=Allah@786, productnamelist=ZARA COAT 3, semail=samreen@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" started-at="2025-05-22T01:52:29 IST" name="closebrowser" finished-at="2025-05-22T01:52:30 IST" duration-ms="1258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="driverInitialisation()[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" started-at="2025-05-22T01:52:30 IST" name="driverInitialisation" finished-at="2025-05-22T01:52:31 IST" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialisation -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" started-at="2025-05-22T01:52:31 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-05-22T01:52:33 IST" duration-ms="2100" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{spassword=Allah@786, productnamelist=ADIDAS ORIGINAL, semail=nowreen@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-cee-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1271, 27). Other element would receive the click: <div _ngcontent-cee-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: MicrosoftEdge=136.0.3240.76)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e3a758c1ab2d2891efeb86e5de8cd5be, clickElement {id=f.6A0F8CC09CF16848E11E1572DF89735A.d.D0DB15C04CD4D8C9B0C359BCE8CFC275.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 136.0.3240.76, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58645}, msedge: {msedgedriverVersion: 136.0.3240.76 (77e9ec69748f..., userDataDir: C:\Users\samre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58645/devtoo..., se:cdpVersion: 136.0.3240.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e3a758c1ab2d2891efeb86e5de8cd5be)] -> css selector: button[routerlink*='cart']]
+Session ID: e3a758c1ab2d2891efeb86e5de8cd5be]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-cee-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1271, 27). Other element would receive the click: <div _ngcontent-cee-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: MicrosoftEdge=136.0.3240.76)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e3a758c1ab2d2891efeb86e5de8cd5be, clickElement {id=f.6A0F8CC09CF16848E11E1572DF89735A.d.D0DB15C04CD4D8C9B0C359BCE8CFC275.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 136.0.3240.76, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58645}, msedge: {msedgedriverVersion: 136.0.3240.76 (77e9ec69748f..., userDataDir: C:\Users\samre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58645/devtoo..., se:cdpVersion: 136.0.3240.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e3a758c1ab2d2891efeb86e5de8cd5be)] -> css selector: button[routerlink*='cart']]
+Session ID: e3a758c1ab2d2891efeb86e5de8cd5be
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at learningSelenium.SeleniumFrameworkDesign.Productcatalogue.addCart(Productcatalogue.java:68)
+at samreen.tests.Standalonetest.SubmitOrder(Standalonetest.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" started-at="2025-05-22T01:52:33 IST" name="closebrowser" finished-at="2025-05-22T01:52:34 IST" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method signature="OrderPage()[pri:0, instance:samreen.tests.Standalonetest@3fc2959f]" started-at="2025-05-22T01:52:34 IST" name="OrderPage" finished-at="2025-05-22T01:52:34 IST" depends-on-methods="samreen.tests.Standalonetest.SubmitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method samreen.tests.Standalonetest.OrderPage() on instance samreen.tests.Standalonetest@3fc2959f depends on not successfully finished methods 
+[samreen.tests.Standalonetest.SubmitOrder() on instance samreen.tests.Standalonetest@3fc2959f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method samreen.tests.Standalonetest.OrderPage() on instance samreen.tests.Standalonetest@3fc2959f depends on not successfully finished methods 
+[samreen.tests.Standalonetest.SubmitOrder() on instance samreen.tests.Standalonetest@3fc2959f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderPage -->
+      </class> <!-- samreen.tests.Standalonetest -->
+    </test> <!-- Standalonetest -->
+  </suite> <!-- Suite -->
+</testng-results>

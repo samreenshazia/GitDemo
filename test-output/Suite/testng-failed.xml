@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Standalonetest(failed)">
+    <classes>
+      <class name="samreen.tests.Standalonetest">
+        <methods>
+          <include name="OrderPage"/>
+          <include name="closebrowser"/>
+          <include name="driverInitialisation"/>
+          <include name="SubmitOrder" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- samreen.tests.Standalonetest -->
+    </classes>
+  </test> <!-- Standalonetest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
