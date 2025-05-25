@@ -35,6 +35,7 @@ public class Errorvalidations extends BaseTest {
 		// TODO Auto-generated method stub
 		System.out.println("love");
 		System.out.println("hate");
+		System.out.println("hate");
 	}
 	
 }
